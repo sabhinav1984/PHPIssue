@@ -36,7 +36,7 @@ class CreateIssue
                             "assignee" => $UserLogin,
                             "milestone" => 1,
                             "labels" => array("Label1","Label2"));
-                        echo $UserLogin."\n".$Password."\n".$Repository."\n".$Post_Data;
+                        
                         //Calling Web Service.
                         $Output = $Callobj->post(
                                         $Repository,
